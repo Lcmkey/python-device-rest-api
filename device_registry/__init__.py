@@ -14,7 +14,7 @@ api = Api(app)
 
 
 def get_db():
-    db = getattr(g, '_database', None)
+    db = getattr(g, "_database", None)
     if db is None:
         db = g._database = shelve.open("devices.db")
     return db
@@ -22,7 +22,7 @@ def get_db():
 
 @app.teardown_appcontext
 def teardown_db(exception):
-    db = getattr(g, '_database', None)
+    db = getattr(g, "_database", None)
     if db is not None:
         db.close()
 
@@ -32,7 +32,7 @@ def index():
     """Present some documentation"""
 
     # Open the README file
-    with open(os.path.dirname(app.root_path) + '/README.md', 'r') as markdown_file:
+    with open(os.path.dirname(app.root_path) + "/README.md", "r") as markdown_file:
 
         # Read the content of the file
         content = markdown_file.read()
