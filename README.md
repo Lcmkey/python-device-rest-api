@@ -2,6 +2,14 @@
 
 # Device Registry Service
 
+# How to run
+
+    $ docker-compose up
+
+or
+
+    $ docker-compose up -d
+
 ## Usage
 
 All responses will have the form
