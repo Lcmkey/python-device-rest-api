@@ -100,4 +100,4 @@ If a device with the given identifier already exists, the existing device will b
 - `204 No Content` on success
 
 
-[jakewright]:[https://github.com/jakewright/tutorials]
+[jakewright]:https://github.com/jakewright/tutorials
